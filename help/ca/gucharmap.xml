@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "1.3.0">
+<!ENTITY manrevision "2.1">
+<!ENTITY date "February 2004">
+<!ENTITY app "Character Map">
+]>
+<!-- 
+ (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ca"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manual del mapa de caràcters</title>
+    <abstract role="description">
+      <para>El mapa de caràcters és un mapa de caràcters Unicode que us permet seleccionar caràcters des d'una taula i inserir-los a una cadena de text.</para>
+    </abstract>
+    <copyright>
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+    <copyright> 
+      <year>2003</year> 
+      <year>2004</year>
+      <holder>Chee Bin HOH</holder> 
+    </copyright><copyright><year>2008</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright> 
+
+<!-- translators: uncomment this:
+    <copyright>
+      <year>2002</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+-->
+
+    <publisher role="maintainer"> 
+      <publishername>Projecte de documentació del GNOME</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+         <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+
+	<para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+
+	<para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I</para>
+		</listitem>
+		<listitem>
+		  <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author>
+        <firstname>Sun</firstname>
+        <surname>Equip de documentació del GNOME</surname>
+        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+      </author>
+      <author> 
+        <firstname>Chee Bin</firstname> 
+        <surname>HOH</surname> 
+        <affiliation> 
+          <orgname>Projecte de documentació del GNOME</orgname> 
+          <address> <email>cbhoh@gnome.org</email> </address> 
+        </affiliation> 
+      </author> 
+
+<!--
+      <author> 
+        <firstname>Documentation</firstname> 
+          <surname>Writer 1</surname> 
+          <affiliation> 
+            <orgname>GNOME Documentation Project</orgname> 
+            <address> <email>doc-writer1@gnome.org</email> </address> 
+          </affiliation> 
+      </author> 
+-->
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+    <publisher role="maintainer">
+      <publishername>Projecte de documentació del GNOME</publishername>
+    </publisher>
+
+
+    <revhistory>
+      <revision> 
+	<revnumber>Manual del mapa de caràcters (versió 2.1)</revnumber> 
+	<date>26-02-2004</date>
+	<revdescription> 
+	  <para>Actualitzat pel GNOME 2.6, versió del programa 1.3.0.</para>
+          <para role="author">Equip de documentació del GNOME de Sun</para>
+          <para role="publisher">Projecte de documentació del GNOME</para>
+        </revdescription> 
+      </revision> 
+      <revision> 
+	<revnumber>Manual del mapa de caràcters Unicode (versió 2.0)</revnumber> 
+	<date>Octubre de 2003</date> 
+	<revdescription> 
+          <para role="author">Chee Bin HOH <email>cbhoh@gnome.org</email></para>
+          <para role="publisher">Projecte de documentació del GNOME</para>
+        </revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Aquest manual descriu la versió 1.3.0 del mapa de caràcters.</releaseinfo> 
+
+    <legalnotice> 
+      <title>Comentaris</title> 
+      <para>Per a informar d'un error o fer algun suggeriment sobre el <application>mapa de caràcters</application> o aquest manual, seguiu les indicacions a la <ulink url="ghelp:user-guide?feedback-bugs" type="help">pàgina de comentaris del GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+<!-- ============= Index ===================================== -->
+  <indexterm zone="index"> 
+    <primary>gucharmap</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>Mapa de caràcters</primary> 
+  </indexterm>
+  <indexterm zone="index"> 
+    <primary>Mapa de caràcters</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="gucharmap-introduction"> 
+    <title>Introducció</title> 
+    <para>El <application>mapa de caràcters</application> us permet inserir caràcters especials en un document o en un camp de text. El <application>mapa de caràcters</application> proporciona caràcters accentuats, símbols matemàtics, símbols especials i signes de puntuació. Utilitzeu el <application>mapa de caràcters</application> per a accedir a caràcters que no estan disponibles en el teclat.</para>
+    <para>El <application>mapa de caràcters</application> mostra tots els caràcters disponibles en tots els sistemes d'escriptura de l'ordinador, utilitzant el joc de caràcters Unicode. L'Unicode és un estàndard de joc de caràcters que té l'objectiu d'incloure tots els caràcters que s'utilitzen en tots els llenguatges escrits del món.</para>
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+
+  <sect1 id="gucharmap-getting-started"> 
+    <title>Primers passos</title> 
+
+    <sect2 id="gucharmap-start">
+      <title>Per a iniciar el mapa de caràcters</title>
+      <para>Podeu iniciar el <application>mapa de caràcters</application> de les maneres següents:</para> 
+      <variablelist>
+        <varlistentry>
+          <term>Menú <guimenu>Aplicacions</guimenu></term>
+          <listitem>
+            <para>Seleccioneu <menuchoice><guimenu>Accessoris</guimenu><guimenuitem>Mapa de caràcters</guimenuitem></menuchoice>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Línia d'ordres</term>
+	  <listitem>
+            <para>Executeu l'ordre següent: <command>gnome-character-map</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gucharmap-when-start">
+      <title>Quan inicieu el mapa de caràcters</title>
+      <para>Quan inicieu el <application>mapa de caràcters</application>, es mostrarà la finestra següent.</para>
+
+      <!-- ==== Figure ==== -->
+      <figure id="gucharmap-window-fig"> 
+        <title>Finestra del mapa de caràcters</title> 
+        <screenshot> 
+          <mediaobject> 
+	    <imageobject>
+              <imagedata fileref="figures/gucharmap_window.png" format="PNG"/> 
+            </imageobject>
+	    <textobject> 
+              <phrase>Mostra la finestra del mapa de caràcters.</phrase> 
+	    </textobject> 
+          </mediaobject> 
+        </screenshot> 
+      </figure>
+      <!-- ==== End of Figure ==== -->
+
+      <!-- Include any descriptions of the GUI immediately after the screenshot of the main UI, -->
+      <!-- for example, the items on the menubar and on the toolbar. This section is optional. -->
+
+      <para>La finestra del <application>mapa de caràcters</application> conté els elements següents:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Barra de menú</term>
+          <listitem>
+            <para>Els menús de la barra de menú contenen la majoria de les ordres que necessiteu per a treballar amb el <application>mapa de caràcters</application>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Barra d'eines</term>
+          <listitem>
+            <para>La barra d'eines conté una llista desplegable dels tipus de lletra, botons de l'estil de la lletra i un quadre de selecció d'ampliació.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Àrea de visualització</term>
+          <listitem>
+            <para>L'àrea de visualització conté els components següents:</para>
+            <itemizedlist>
+              <listitem>
+                <para>Quadre de llista <guilabel>Grafia</guilabel> o <guilabel>Bloc Unicode</guilabel></para>
+              </listitem>
+              <listitem>
+                <para>Pestanya <guilabel>Taula de caràcters</guilabel></para>
+              </listitem>
+              <listitem>
+                <para>Pestanya <guilabel>Detalls del caràcter</guilabel></para>
+              </listitem>
+              <listitem>
+                <para>Quadre de text <guilabel>Text a copiar</guilabel></para>
+              </listitem>
+              <listitem>
+                <para>Botó <guibutton>Copia</guibutton></para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Barra d'estat</term>
+          <listitem>
+            <para>La barra d'estat mostra el punt de codi Unicode i el nom del caràcter Unicode del caràcter seleccionat actualment.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<!-- ================ Usage ================================ --> 
+  <sect1 id="gucharmap-usage">
+    <title>Utilització</title> 
+    
+    <sect2 id="gucharmap-change-view">
+      <title>Per a canviar la llista del joc de caràcters</title>
+      <para>Per a llistar els jocs de caràcter pel nom de la grafia, seleccioneu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Per grafia</guimenuitem></menuchoice>.</para>
+      <para>Per a llistar els jocs de caràcter pel bloc Unicode, seleccioneu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Per bloc Unicode</guimenuitem></menuchoice>.</para>
+    </sect2>
+    
+    <sect2 id="gucharmap-create-textstring">
+      <title>Per a crear una cadena de text</title>
+      <para>Per a crear una cadena de text en el camp <guilabel>Text a copiar</guilabel>, realitzeu els passos següents:</para>
+      <orderedlist>
+        <listitem>
+          <para>Seleccioneu un joc de caràcters del quadre de llista <guilabel>Grafia</guilabel> o <guilabel>Bloc Unicode</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Inseriu caràcters d'alguna de les maneres següents:</para>
+          <itemizedlist>
+            <listitem>
+              <para>Per a inserir un caràcter en el camp <guilabel>Text a copiar</guilabel>, feu doble clic a un botó de caràcter de la pestanya <guilabel>Taula de caràcters</guilabel>.</para>
+            </listitem>
+            <listitem>
+              <para>
+                Select a character button in the <guilabel>Character Table</guilabel> tabbed section, then press <keycap>Return</keycap> to insert the character in the <guilabel>Text to copy</guilabel> field. 
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Select a character button in the <guilabel>Character Table</guilabel> tabbed section, then click and drag the character to the <guilabel>Text to copy</guilabel> field. 
+              </para>
+            </listitem>
+            <listitem>
+              <para>Feu clic al camp <guilabel>Text a copiar</guilabel> per a donar el focus al camp. Si hi ha una cadena de text al camp, feu clic a la cadena de text per a senyalar on voleu inserir el caràcter. Premeu una tecla de caràcter del teclat per a inserir aquest caràcter en el camp.</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+<!-- =============== To Copy and Paste a Text String ====================== -->
+    <sect2 id="gucharmap-copy-textstring">
+      <title>Per a copiar i enganxar la cadena de text a una aplicació</title>
+      <para>Per a copiar i enganxar la cadena de text des del camp <guilabel>Text a copiar</guilabel> a una aplicació, realitzeu els passos següents:</para>
+      <orderedlist>
+        <listitem>
+          <para>Feu clic a <guibutton>Copia</guibutton>. Si la cadena de text no està seleccionada, o està tota seleccionada, es copiarà tota la cadena en el porta-retalls. Si només hi ha seleccionada una part de la cadena, es copiarà aquesta part.</para>
+        </listitem>
+        <listitem>
+          <para>
+            Switch to your application and choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Paste</guimenuitem></menuchoice>,
+            or press shortcut key <keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo>.
+             
+          </para>
+        </listitem>
+      </orderedlist>
+      <para>Quan enganxeu el contingut del camp <guilabel>Text a copiar</guilabel> a altres aplicacions, la cadena de text apareixerà en el joc de caràcters actual de l'aplicació.</para>
+      <para>Si la cadena de text conté caràcters no visibles, només la podreu inserir a aplicacions que admetin tot el joc de caràcters.</para>
+    </sect2>
+
+    <sect2 id="usage-find-character">
+      <title>Per a cercar un caràcter</title>
+      <para>Per a cercar un caràcter, realitzeu els passos següents:</para>
+      <orderedlist>
+        <listitem>
+          <para>
+            Choose <menuchoice><guimenu>Search</guimenu><guimenuitem>Find</guimenuitem></menuchoice>,
+	    or press shortcut key <keycombo><keycap>Ctrl</keycap><keycap>F</keycap></keycombo>.
+	    The <guilabel>Find</guilabel> dialog opens.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Introduïu el text a cercar en el camp <guilabel>Cerca</guilabel>.</para>
+          <itemizedlist>            
+             <listitem><para>Seleccioneu <guilabel>Coincideix tota la paraula</guilabel> per a trobar només paraules completes que coincideixen amb el text.</para></listitem>
+             <listitem><para>Per defecte, només es cerca els noms dels caràcters. Seleccioneu <guilabel>Cerca en els detalls del caràcter</guilabel> per a cercar en altres parts de la descripció del caràcter, com ara les notes, equivalents i equivalents aproximats.</para></listitem>
+          </itemizedlist>
+        </listitem>
+        <listitem>
+          <para>Feu clic a <guibutton>Següent</guibutton> per a trobar la primera coincidència del text després del caràcter seleccionat actualment. El <application>mapa de caràcters</application> selecciona el caràcter que troba.</para>
+        </listitem>
+        <listitem>
+          <para>
+            Click <guibutton>Next</guibutton> to find the next matching character. Alternatively, choose <menuchoice><guimenu>Search</guimenu><guimenuitem>Find Next</guimenuitem></menuchoice>,
+	    or press shortcut key <keycombo><keycap>Ctrl</keycap><keycap>G</keycap></keycombo>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Click <guibutton>Previous</guibutton> to find the previous matching character. Alternatively, choose <menuchoice><guimenu>Search</guimenu><guimenuitem>Find Previous</guimenuitem></menuchoice>,
+	    or press shortcut key <keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>G</keycap></keycombo>.
+          </para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+    
+<!-- =============== To Browse the Character Table  ========================= -->
+    <sect2 id="usage-browse-characters">
+      <title>Per a navegar a través de tots els caràcters</title>
+      <para>Per a navegar a través del mapa de caràcters, utilitzeu el menú <guimenu>Vés</guimenu>.</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>
+	    Next character,
+	    or press shortcut key <keycombo><keycap>Ctrl</keycap><keycap>N</keycap></keycombo>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+	    Previous character,
+	    or press shortcut key <keycombo><keycap>Ctrl</keycap><keycap>P</keycap></keycombo>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+	    Next script,
+	    or press shortcut key <keycombo><keycap>Ctrl</keycap><keycap>Page Down</keycap></keycombo>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+	    Previous script,
+	    or press shortcut key <keycombo><keycap>Ctrl</keycap><keycap>Page Up</keycap></keycombo>.
+          </para>
+        </listitem>
+      </itemizedlist>
+        
+      <para>Podeu navegar pel mapa de caràcters per caràcter individual i per grafia o bloc Unicode. Això depèn de si el mapa de caràcters es mostra per grafia o per blocs Unicode. Per a canviar-ho, seleccioneu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Per grafia</guimenuitem></menuchoice> o <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Per bloc Unicode</guimenuitem></menuchoice>.</para>
+      
+      <para>També funcionen les tecles següents per a navegar pel mapa de caràcters:</para>
+        
+      <itemizedlist>
+        <listitem>
+          <para>Premeu les tecles de cursor del teclat per a navegar a través dels caràcters.</para>
+        </listitem>
+        <listitem>
+          <para>Premeu les tecles <keycap>Retrocedir pàgina</keycap> o <keycap>Avançar pàgina</keycap> per a navegar a través dels caràcters pàgina per pàgina.</para>
+        </listitem>
+        <listitem>
+          <para>Premeu la tecla <keycap>Inici</keycap> per a seleccionar el primer caràcter de la seqüència Unicode. Per a seleccionar l'últim caràcter, premeu la tecla <keycap>Final</keycap>.</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+    
+    <sect2 id="usage-display-details">
+      <title>Per a visualitzar informació detallada sobre un caràcter</title>
+      <para>Per a visualitzar informació detallada sobre un caràcter, realitzeu els passos següents:</para>
+      <orderedlist>
+        <listitem>
+          <para>Seleccioneu un joc de caràcters del quadre de llista <guilabel>Grafia</guilabel> o <guilabel>Bloc Unicode</guilabel>. Exemple:  <guilabel>Llatí</guilabel></para>
+        </listitem>
+        <listitem>
+          <para>Seleccioneu un caràcter de la pestanya <guilabel>Taula de caràcters</guilabel>. Exemple: <guilabel>B</guilabel></para>
+        </listitem>
+        <listitem>
+          <para>Feu clic a la pestanya <guilabel>Detalls del caràcter</guilabel>.</para>
+        </listitem>
+      </orderedlist>
+      <para>La pestanya <guilabel>Detalls del caràcter</guilabel> mostra la informació següent sobre el caràcter seleccionat:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Punt de codi Unicode</para>
+          <para>Exemple: <guilabel>U+0042</guilabel></para>
+        </listitem>
+        <listitem>
+          <para>Nom del caràcter Unicode</para>
+          <para>Exemple: <guilabel>LATIN CAPITAL LETTER B</guilabel></para>
+        </listitem>
+        <listitem>
+          <para>
+            <guilabel>Propietats generals del caràcter</guilabel>
+          </para>
+          <itemizedlist>
+            <listitem>
+              <para>Categoria Unicode</para>
+              <para>Exemple: <guilabel>Lletra, majúscula</guilabel></para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+        <listitem>
+          <para>
+            <guilabel>Algunes representacions útils</guilabel>
+          </para>
+          <itemizedlist>
+            <listitem>
+              <para>Codificació UTF-8</para>
+              <para>Exemple: <guilabel>0x42</guilabel></para>
+            </listitem>
+            <listitem>
+              <para>Codificació UTF-16</para>
+              <para>Exemple: <guilabel>0x0042</guilabel></para>
+            </listitem>
+            <listitem>
+              <para>Codificació octal UTF-8 escapada en C</para>
+              <para>Exemple: <guilabel>\102</guilabel></para>
+            </listitem>
+            <listitem>
+              <para>Entitat decimal XML</para>
+              <para>Exemple: <guilabel>"&amp;#66"</guilabel></para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+        <listitem>
+          <para>
+            <guilabel>Anotacions i referències creuades</guilabel>
+          </para>
+          <para>Exemple: <guilabel>U+212C SCRIPT CAPITAL B</guilabel></para>
+          <para>Feu clic en l'enllaç per a mostrar els detalls del caràcter de la referència.</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+    
+    <sect2 id="usage-format-character">
+      <title>Per a canviar el format d'un caràcter</title>
+      <para>Per a canviar el format d'un caràcter, realitzeu qualsevol dels passos següents:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Per a canviar el tipus de lletra, seleccioneu un tipus de lletra de la llista desplegable dels tipus de lletra.</para>
+        </listitem>
+        <listitem>
+          <para>
+            To change the font type to bold type, click on the <guibutton>Bold</guibutton> button,
+	    or press shortcut key <keycombo><keycap>Alt</keycap><keycap>B</keycap></keycombo>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            To change the font type to italic type, click on the <guibutton>Italic</guibutton> button,
+	    or press shortcut key <keycombo><keycap>Alt</keycap><keycap>I</keycap></keycombo>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            To increase the font size, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Zoom In</guimenuitem></menuchoice> or use the zoom spin box,
+	    or press shortcut key <keycombo><keycap>Ctrl</keycap><keycap>+</keycap></keycombo>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            To decrease the font size, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Zoom Out</guimenuitem></menuchoice> or use the zoom spin box,
+	    or press shortcut key <keycombo><keycap>Ctrl</keycap><keycap>-</keycap></keycombo>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            To display normal font size, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Normal Size</guimenuitem></menuchoice>,
+	    or press shortcut key <keycombo><keycap>Ctrl</keycap><keycap>=</keycap></keycombo>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            To magnify the selected character, hold <keycap>Shift</keycap>.
+          </para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+    
+    <sect2 id="usage-format-chartable">
+      <title>Per a canviar el format de la taula de caràcters</title>
+      <para>Per a canviar el format de la taula de caràcters, seleccioneu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Ajusta les columnes a una potència de dos</guimenuitem></menuchoice>.</para>
+      <para>El <application>mapa de caràcters</application> canvia la pestanya <guilabel>Taula de caràcters</guilabel> de manera que el número de columnes és una potència de dos, per exemple, dues columnes, quatre columnes, vuit columnes... El número de columnes depèn de la mida de la finestra i de la mida de la lletra.</para>
+    </sect2>
+
+  </sect1>
+</article>
