@@ -31,8 +31,7 @@
 #define GDK_KEY(symbol) GDK_##symbol
 #endif
 
-#include "gucharmap-charmap.h"
-#include "gucharmap-unicode-info.h"
+#include "gucharmap.h"
 #include "gucharmap-marshal.h"
 #include "gucharmap-private.h"
 
