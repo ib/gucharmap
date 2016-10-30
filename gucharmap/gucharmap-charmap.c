@@ -1,6 +1,7 @@
 /*
  * Copyright (c) 2004 Noah Levitt
  * Copyright (c) 2007, 2008 Christian Persch
+ * Copyright (c) 2016 DaeHyun Sung
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -779,7 +780,8 @@ set_details (GucharmapCharmap *charmap,
       || gucharmap_get_unicode_kJapaneseOn (uc)
       || gucharmap_get_unicode_kJapaneseKun (uc)
       || gucharmap_get_unicode_kTang (uc)
-      || gucharmap_get_unicode_kKorean (uc))
+      || gucharmap_get_unicode_kHangul(uc)
+      || gucharmap_get_unicode_kVietnamese(uc))
     {
       insert_heading (charmap, buffer, &iter, _("CJK Ideograph Information"));
 
@@ -813,10 +815,15 @@ set_details (GucharmapCharmap *charmap,
         insert_vanilla_detail (charmap, buffer, &iter,
                                _("Tang Pronunciation:"), csp);
     
-      csp = gucharmap_get_unicode_kKorean (uc);
+      csp = gucharmap_get_unicode_kHangul (uc);
       if (csp)
         insert_vanilla_detail (charmap, buffer, &iter,
                                _("Korean Pronunciation:"), csp);
+      
+      csp = gucharmap_get_unicode_kVietnamese (uc);
+      if (csp)
+        insert_vanilla_detail (charmap, buffer, &iter, 
+                               _("Vietnamese Pronunciation:"), csp);
     }
 #endif /* #if ENABLE_UNIHAN */
 }
