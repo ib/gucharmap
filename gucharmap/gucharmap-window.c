@@ -423,7 +423,7 @@ help_about (GtkAction       *action,
       "Noah Levitt <nlevitt@columbia.edu>", 
       "Daniel Elstner <daniel.elstner@gmx.net>", 
       "Padraig O'Briain <Padraig.Obriain@sun.com>",
-      "Christian Persch <" "chpe" "\100" "gnome" "." "org" ">",
+      "Christian Persch <" "chpe" "\100" "src.gnome" "." "org" ">",
       "DaeHyun Sung <sungdh86@gmail.com>",
       NULL 
     };
