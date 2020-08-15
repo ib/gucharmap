@@ -1439,3 +1439,7 @@ msgstr "八思巴文"
 #: ../gucharmap/unicode-scripts.h:117
 msgid "Yi"
 msgstr "彝文"
+
+#
+msgid "GConf could not be initialized."
+msgstr "無法初始化 GConf。"

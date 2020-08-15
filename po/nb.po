@@ -1442,3 +1442,7 @@ msgstr "Phags Pa"
 #: ../gucharmap/unicode-scripts.h:117
 msgid "Yi"
 msgstr "Yi"
+
+#
+msgid "GConf could not be initialized."
+msgstr "GConf ble ikke initiert."
