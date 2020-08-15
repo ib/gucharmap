@@ -1022,11 +1022,8 @@ set_cursor_if_appropriate (GucharmapCharmap *charmap,
 {
   GucharmapCharmapPrivate *priv = charmap->priv;
   GSList *tags = NULL, *tagp = NULL;
-  GtkTextBuffer *buffer;
   GtkTextIter iter;
   gboolean hovering_over_link = FALSE;
-
-  buffer = gtk_text_view_get_buffer (priv->details_view);
 
   gtk_text_view_get_iter_at_location (priv->details_view,
                                       &iter, x, y);
@@ -1075,7 +1072,6 @@ details_motion_notify_event (GtkWidget *text_view,
 
   set_cursor_if_appropriate (charmap, x, y);
 
-  gdk_window_get_pointer (gtk_widget_get_window (text_view), NULL, NULL, NULL);
   return FALSE;
 }
 

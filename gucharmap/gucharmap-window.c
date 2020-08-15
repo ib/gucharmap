@@ -509,7 +509,6 @@ next_or_prev_character (GtkAction       *action,
 {
   GucharmapChartable *chartable;
   GucharmapChartableClass *klass;
-  GtkBindingSet *binding_set;
   const char *name;
   guint keyval = 0;
 
@@ -522,7 +521,6 @@ next_or_prev_character (GtkAction       *action,
 
   chartable = gucharmap_charmap_get_chartable (guw->charmap);
   klass = GUCHARMAP_CHARTABLE_GET_CLASS (chartable);
-  binding_set = gtk_binding_set_by_class (klass);
   gtk_binding_set_activate (gtk_binding_set_by_class (klass),
                             keyval,
                             0,
