@@ -3002,12 +3002,8 @@ esac
 AM_BACKSLASH='\'
 
 
-if test -z "$enable_maintainer_mode"; then
-  enable_maintainer_mode=yes
-fi
-
-{ $as_echo "$as_me:${as_lineno-$LINENO}: checking whether to disable maintainer-specific portions of Makefiles" >&5
-$as_echo_n "checking whether to disable maintainer-specific portions of Makefiles... " >&6; }
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking whether to enable maintainer-specific portions of Makefiles" >&5
+$as_echo_n "checking whether to enable maintainer-specific portions of Makefiles... " >&6; }
     # Check whether --enable-maintainer-mode was given.
 if test "${enable_maintainer_mode+set}" = set; then :
   enableval=$enable_maintainer_mode; USE_MAINTAINER_MODE=$enableval
