@@ -1480,8 +1480,8 @@ msgstr "Phach-x-pa"
 msgid "Yi"
 msgstr "Yi"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "Không thể sơ khởi GConf."
+msgid "GConf could not be initialized."
+msgstr "Không thể sơ khởi GConf."
 
 #~ msgid "Searching…"
 #~ msgstr "Đang tìm kiếm..."

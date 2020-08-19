@@ -1573,8 +1573,8 @@ msgstr "0x41"
 #~ msgid "_Quit"
 #~ msgstr "Έ_ξοδος"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "Αδυναμία αρχικοποίησης GConf."
+msgid "GConf could not be initialized."
+msgstr "Αδυναμία αρχικοποίησης GConf."
 
 #~ msgid "Searching…"
 #~ msgstr "Αναζήτηση..."

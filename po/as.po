@@ -1644,8 +1644,8 @@ msgstr "0x41"
 #~ msgid "Linear B প্ৰতিকচিহ্নs"
 #~ msgstr "ৰৈখিক B প্ৰতিকচিহ্নিত"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "GConf আৰম্ভ কৰিবলে ব্যৰ্থ।"
+msgid "GConf could not be initialized."
+msgstr "GConf আৰম্ভ কৰিবলে ব্যৰ্থ।"
 
 #~ msgid "Searching…"
 #~ msgstr "সন্ধান কৰা হচ্ছে..."

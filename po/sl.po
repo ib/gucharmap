@@ -1604,8 +1604,8 @@ msgstr "0x41"
 #~ msgid "_Quit"
 #~ msgstr "_Končaj"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "Predmeta GConf ni mogoče začeti."
+msgid "GConf could not be initialized."
+msgstr "Predmeta GConf ni mogoče začeti."
 
 #~ msgid "Searching…"
 #~ msgstr "Iskanje ..."

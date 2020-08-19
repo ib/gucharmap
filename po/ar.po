@@ -1555,8 +1555,8 @@ msgstr "0x623"
 #~ msgid "_Quit"
 #~ msgstr "أ_نهِ"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "تعذّر تمهيد GConf."
+msgid "GConf could not be initialized."
+msgstr "تعذّر تمهيد GConf."
 
 #~ msgid "Searching…"
 #~ msgstr "يبحث…"

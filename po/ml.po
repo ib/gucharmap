@@ -1543,8 +1543,8 @@ msgctxt "First letter"
 msgid "0x41"
 msgstr "0x41"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "GConf ആരംഭിക്കുവാന്‍ സാധ്യമല്ല."
+msgid "GConf could not be initialized."
+msgstr "GConf ആരംഭിക്കുവാന്‍ സാധ്യമല്ല."
 
 #~ msgid "Searching…"
 #~ msgstr "തെരയുന്നു..."

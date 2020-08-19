@@ -1452,8 +1452,8 @@ msgstr "Фагс-Па"
 msgid "Yi"
 msgstr "Ї"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "Не вдається ініціалізувати GConf."
+msgid "GConf could not be initialized."
+msgstr "Не вдається ініціалізувати GConf."
 
 #~ msgid "Searching…"
 #~ msgstr "Пошук…"

@@ -1537,8 +1537,8 @@ msgctxt "First letter"
 msgid "0x41"
 msgstr "0x0e01"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "ไม่สามารถตั้งต้น GConf ได้"
+msgid "GConf could not be initialized."
+msgstr "ไม่สามารถตั้งต้น GConf ได้"
 
 #~ msgid "Searching…"
 #~ msgstr "กำลังค้นหา…"

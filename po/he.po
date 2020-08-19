@@ -1605,8 +1605,8 @@ msgstr "0x41"
 #~ msgid "_Quit"
 #~ msgstr "_יציאה"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "לא ניתן להפעיל את GConf."
+msgid "GConf could not be initialized."
+msgstr "לא ניתן להפעיל את GConf."
 
 #~ msgid "Searching…"
 #~ msgstr "בחיפוש…"

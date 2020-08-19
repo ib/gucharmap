@@ -1484,5 +1484,5 @@ msgstr "فگس پا"
 msgid "Yi"
 msgstr "یی"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "راه‌اندازی اولیه GConf امکان‌پذیر نیست."
+msgid "GConf could not be initialized."
+msgstr "راه‌اندازی اولیه GConf امکان‌پذیر نیست."

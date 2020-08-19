@@ -1452,8 +1452,8 @@ msgstr "八思巴字"
 msgid "Yi"
 msgstr "彝语"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "无法初始化 GConf。"
+msgid "GConf could not be initialized."
+msgstr "无法初始化 GConf。"
 
 #~ msgid "Searching…"
 #~ msgstr "正在搜索..."

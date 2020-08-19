@@ -1439,8 +1439,8 @@ msgstr "யி"
 #~ msgid "Snap _Columns to Power of Two"
 #~ msgstr "_C நெடுவரிசைகளை இரண்டின்  வர்க்கங்களாக பிரி"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "ஜிகான்ஃப் ஐ துவக்க முடியவில்லை"
+msgid "GConf could not be initialized."
+msgstr "ஜிகான்ஃப் ஐ துவக்க முடியவில்லை"
 
 #~ msgid "Searching…"
 #~ msgstr "தேடுகிறது..."

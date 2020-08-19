@@ -1534,3 +1534,7 @@ msgstr ""
 msgctxt "First letter"
 msgid "0x41"
 msgstr "0x0410"
+
+#
+msgid "GConf could not be initialized."
+msgstr "Не ўдалося ініцыяваць GConf."

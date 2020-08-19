@@ -1535,3 +1535,7 @@ msgctxt "First letter"
 msgid "0x41"
 msgstr "0x41"
 
+
+#
+msgid "GConf could not be initialized."
+msgstr "A GConf nem inicializálható."

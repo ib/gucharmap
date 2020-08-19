@@ -1580,8 +1580,8 @@ msgstr "0x41"
 #~ msgid "_Quit"
 #~ msgstr "_Salir"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "No se pudo inicializar GConf."
+msgid "GConf could not be initialized."
+msgstr "No se pudo inicializar GConf."
 
 #~ msgid "Searching…"
 #~ msgstr "Buscando…"

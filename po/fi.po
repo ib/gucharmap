@@ -1502,3 +1502,7 @@ msgstr "Phags Pa"
 msgid "Yi"
 msgstr "Yi"
 
+
+#
+msgid "GConf could not be initialized."
+msgstr "GConf:ia ei voitu alustaa."

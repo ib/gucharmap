@@ -1516,8 +1516,8 @@ msgstr "Phags Pa"
 msgid "Yi"
 msgstr "Yi"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "Kon GConf niet initialiseren."
+msgid "GConf could not be initialized."
+msgstr "Kon GConf niet initialiseren."
 
 #~ msgid "Searching…"
 #~ msgstr "Zoeken…"

@@ -1603,8 +1603,8 @@ msgctxt "First letter"
 msgid "0x41"
 msgstr "0x41"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "GConf を初期化できませんでした"
+msgid "GConf could not be initialized."
+msgstr "GConf を初期化できませんでした"
 
 #~ msgid "Searching…"
 #~ msgstr "検索中…"

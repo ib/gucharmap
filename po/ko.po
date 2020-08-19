@@ -1555,3 +1555,7 @@ msgstr ""
 msgctxt "First letter"
 msgid "0x41"
 msgstr "0xAC00"
+
+#
+msgid "GConf could not be initialized."
+msgstr "GConf를 초기화할 수 없습니다."

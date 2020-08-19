@@ -1539,8 +1539,8 @@ msgstr "Phags Pa"
 msgid "Yi"
 msgstr "Yi"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "GConf kunde inte initieras."
+msgid "GConf could not be initialized."
+msgstr "GConf kunde inte initieras."
 
 #~ msgid "Searching…"
 #~ msgstr "Söker..."

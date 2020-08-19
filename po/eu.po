@@ -1450,8 +1450,8 @@ msgstr "Phags Pa"
 msgid "Yi"
 msgstr "Yi"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "Ezin izan da GConf hasieratu."
+msgid "GConf could not be initialized."
+msgstr "Ezin izan da GConf hasieratu."
 
 #~ msgid "Searching…"
 #~ msgstr "Bilatzen..."
