@@ -227,6 +227,8 @@ INTROSPECTION_COMPILER_ARGS = --includedir=$(srcdir)
 
 Gucharmap-@GUCHARMAP_API_VERSION@.gir: libgucharmap@GUCHARMAP_LIBRARY_SUFFIX_U@.la
 Gucharmap_@GUCHARMAP_API_VERSION_U@_gir_INCLUDES = Pango-1.0 Gdk-$(GTK_API_VERSION) Gtk-$(GTK_API_VERSION)
+Gucharmap_@GUCHARMAP_API_VERSION_U@_gir_SCANNERFLAGS = --c-include "gucharmap/gucharmap.h"
+Gucharmap_@GUCHARMAP_API_VERSION_U@_gir_EXPORT_PACKAGES = gucharmap-$(GUCHARMAP_API_PC_VERSION)
 Gucharmap_@GUCHARMAP_API_VERSION_U@_gir_CFLAGS = $(GTK_CFLAGS) -DGUCHARMAP_COMPILATION -I$(top_srcdir)
 Gucharmap_@GUCHARMAP_API_VERSION_U@_gir_LIBS = libgucharmap@GUCHARMAP_LIBRARY_SUFFIX_U@.la
 Gucharmap_@GUCHARMAP_API_VERSION_U@_gir_FILES = $(filter-out unicode-%.h,$(libgucharmap@GUCHARMAP_LIBRARY_SUFFIX_U@_la_SOURCES))
