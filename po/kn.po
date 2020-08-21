@@ -1552,8 +1552,8 @@ msgctxt "First letter"
 msgid "0x41"
 msgstr "0x41"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "GConf ಅನ್ನು ಆರಂಭಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
+msgid "GConf could not be initialized."
+msgstr "GConf ಅನ್ನು ಆರಂಭಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #~ msgid "Searching…"
 #~ msgstr "ಹುಡುಕುತ್ತಿದೆ ..."
