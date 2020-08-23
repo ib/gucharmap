@@ -702,8 +702,8 @@ MAKEFLAGS=
 # Identity of this package.
 PACKAGE_NAME='GNOME Character Map'
 PACKAGE_TARNAME='gucharmap'
-PACKAGE_VERSION='3.0.1-7.0'
-PACKAGE_STRING='GNOME Character Map 3.0.1-7.0'
+PACKAGE_VERSION='3.0.1-8.0'
+PACKAGE_STRING='GNOME Character Map 3.0.1-8.0'
 PACKAGE_BUGREPORT='http://bugzilla.gnome.org/enter_bug.cgi?product=gucharmap'
 PACKAGE_URL=''
 
@@ -2948,7 +2948,7 @@ fi
 
 # Define the identity of the package.
  PACKAGE='gucharmap'
- VERSION='3.0.1-7.0'
+ VERSION='3.0.1-8.0'
 
 
 cat >>confdefs.h <<_ACEOF
