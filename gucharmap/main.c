@@ -49,12 +49,15 @@ main (int argc, char **argv)
   GdkRectangle rect;
   GError *error = NULL;
   char *font = NULL;
+  char **remaining = NULL;
   GOptionEntry goptions[] =
   {
     { "font", 0, 0, G_OPTION_ARG_STRING, &font,
       N_("Font to start with; ex: 'Serif 27'"), N_("FONT") },
     { "version", 0, G_OPTION_FLAG_HIDDEN | G_OPTION_FLAG_NO_ARG, 
       G_OPTION_ARG_CALLBACK, option_version_cb, NULL, NULL },
+    { G_OPTION_REMAINING, 0, 0, G_OPTION_ARG_STRING_ARRAY, &remaining,
+      NULL, N_("[STRING…]") },
     { NULL }
   };
 
@@ -109,6 +112,13 @@ main (int argc, char **argv)
   gucharmap_settings_add_window (GTK_WINDOW (window));
 
   gtk_window_present (GTK_WINDOW (window));
+
+  if (remaining) {
+    char *str = g_strjoinv (" ", remaining);
+    gucharmap_window_search (GUCHARMAP_WINDOW (window), str);
+    g_free (str);
+    g_strfreev (remaining);
+  }
 
   gtk_main ();
 
