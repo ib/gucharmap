@@ -33,6 +33,7 @@ EXTRA_DIST = \
 	gtkrc.win32 \
 	gnome-doc-utils.make \
 	$(schema_in_files) \
+	COPYING.GFDL \
 	COPYING.UNICODE \
 	$(NULL)
 
