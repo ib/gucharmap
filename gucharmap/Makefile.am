@@ -159,6 +159,7 @@ gucharmap_LDFLAGS = \
 gucharmap_LDADD = \
 	libgucharmap@GUCHARMAP_LIBRARY_SUFFIX_U@.la	\
 	$(GTK_LIBS)	\
+	$(LIBDL) \
 	$(GCONF_LIBS)	\
 	$(INTL_LIBS)
 

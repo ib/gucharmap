@@ -127,7 +127,8 @@ am_gucharmap_OBJECTS = gucharmap-gucharmap-mini-fontsel.$(OBJEXT) \
 	$(am__objects_1)
 gucharmap_OBJECTS = $(am_gucharmap_OBJECTS)
 gucharmap_DEPENDENCIES = libgucharmap@GUCHARMAP_LIBRARY_SUFFIX_U@.la \
-	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) $(am__append_1)
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__append_1)
 gucharmap_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(gucharmap_CFLAGS) \
 	$(CFLAGS) $(gucharmap_LDFLAGS) $(LDFLAGS) -o $@
@@ -252,6 +253,7 @@ INTROSPECTION_SCANNER = @INTROSPECTION_SCANNER@
 INTROSPECTION_TYPELIBDIR = @INTROSPECTION_TYPELIBDIR@
 LD = @LD@
 LDFLAGS = @LDFLAGS@
+LIBDL = @LIBDL@
 LIBGUCHARMAP_LT_CURRENT_MINUS_AGE = @LIBGUCHARMAP_LT_CURRENT_MINUS_AGE@
 LIBGUCHARMAP_LT_VERSION = @LIBGUCHARMAP_LT_VERSION@
 LIBOBJS = @LIBOBJS@
@@ -480,7 +482,8 @@ gucharmap_LDFLAGS = \
 	$(AM_LDFLAGS)
 
 gucharmap_LDADD = libgucharmap@GUCHARMAP_LIBRARY_SUFFIX_U@.la \
-	$(GTK_LIBS) $(GCONF_LIBS) $(INTL_LIBS) $(am__append_1)
+	$(GTK_LIBS) $(LIBDL) $(GCONF_LIBS) $(INTL_LIBS) \
+	$(am__append_1)
 
 # printoptions.h: print.glade
 # 	$(AM_V_GEN) $(GTK_BUILDER_CONVERT) --root custom_tab_container $< - | \
