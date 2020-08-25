@@ -4006,6 +4006,66 @@ else
 fi
 
 
+  ac_fn_c_check_header_mongrel "$LINENO" "minix/config.h" "ac_cv_header_minix_config_h" "$ac_includes_default"
+if test "x$ac_cv_header_minix_config_h" = xyes; then :
+  MINIX=yes
+else
+  MINIX=
+fi
+
+
+  if test "$MINIX" = yes; then
+
+$as_echo "#define _POSIX_SOURCE 1" >>confdefs.h
+
+
+$as_echo "#define _POSIX_1_SOURCE 2" >>confdefs.h
+
+
+$as_echo "#define _MINIX 1" >>confdefs.h
+
+  fi
+
+
+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether it is safe to define __EXTENSIONS__" >&5
+$as_echo_n "checking whether it is safe to define __EXTENSIONS__... " >&6; }
+if ${ac_cv_safe_to_define___extensions__+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+#         define __EXTENSIONS__ 1
+          $ac_includes_default
+int
+main ()
+{
+
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_compile "$LINENO"; then :
+  ac_cv_safe_to_define___extensions__=yes
+else
+  ac_cv_safe_to_define___extensions__=no
+fi
+rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_safe_to_define___extensions__" >&5
+$as_echo "$ac_cv_safe_to_define___extensions__" >&6; }
+  test $ac_cv_safe_to_define___extensions__ = yes &&
+    $as_echo "#define __EXTENSIONS__ 1" >>confdefs.h
+
+  $as_echo "#define _ALL_SOURCE 1" >>confdefs.h
+
+  $as_echo "#define _GNU_SOURCE 1" >>confdefs.h
+
+  $as_echo "#define _POSIX_PTHREAD_SEMANTICS 1" >>confdefs.h
+
+  $as_echo "#define _TANDEM_SOURCE 1" >>confdefs.h
+
+
 # Check whether --enable-static was given.
 if test "${enable_static+set}" = set; then :
   enableval=$enable_static; p=${PACKAGE-default}
@@ -11654,10 +11714,12 @@ if test -n "$GTK_CFLAGS"; then
     { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"
   glib-2.0 >= \$GLIB_REQUIRED
   gtk+-\$GTK_API_VERSION >= \$GTK_REQUIRED
+  freetype2
 \""; } >&5
   ($PKG_CONFIG --exists --print-errors "
   glib-2.0 >= $GLIB_REQUIRED
   gtk+-$GTK_API_VERSION >= $GTK_REQUIRED
+  freetype2
 ") 2>&5
   ac_status=$?
   $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
@@ -11665,6 +11727,7 @@ if test -n "$GTK_CFLAGS"; then
   pkg_cv_GTK_CFLAGS=`$PKG_CONFIG --cflags "
   glib-2.0 >= $GLIB_REQUIRED
   gtk+-$GTK_API_VERSION >= $GTK_REQUIRED
+  freetype2
 " 2>/dev/null`
 else
   pkg_failed=yes
@@ -11679,10 +11742,12 @@ if test -n "$GTK_LIBS"; then
     { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"
   glib-2.0 >= \$GLIB_REQUIRED
   gtk+-\$GTK_API_VERSION >= \$GTK_REQUIRED
+  freetype2
 \""; } >&5
   ($PKG_CONFIG --exists --print-errors "
   glib-2.0 >= $GLIB_REQUIRED
   gtk+-$GTK_API_VERSION >= $GTK_REQUIRED
+  freetype2
 ") 2>&5
   ac_status=$?
   $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
@@ -11690,6 +11755,7 @@ if test -n "$GTK_LIBS"; then
   pkg_cv_GTK_LIBS=`$PKG_CONFIG --libs "
   glib-2.0 >= $GLIB_REQUIRED
   gtk+-$GTK_API_VERSION >= $GTK_REQUIRED
+  freetype2
 " 2>/dev/null`
 else
   pkg_failed=yes
@@ -11711,11 +11777,13 @@ fi
 	        GTK_PKG_ERRORS=`$PKG_CONFIG --short-errors --print-errors "
   glib-2.0 >= $GLIB_REQUIRED
   gtk+-$GTK_API_VERSION >= $GTK_REQUIRED
+  freetype2
 " 2>&1`
         else
 	        GTK_PKG_ERRORS=`$PKG_CONFIG --print-errors "
   glib-2.0 >= $GLIB_REQUIRED
   gtk+-$GTK_API_VERSION >= $GTK_REQUIRED
+  freetype2
 " 2>&1`
         fi
 	# Put the nasty error message in config.log where it belongs
@@ -11724,6 +11792,7 @@ fi
 	as_fn_error "Package requirements (
   glib-2.0 >= $GLIB_REQUIRED
   gtk+-$GTK_API_VERSION >= $GTK_REQUIRED
+  freetype2
 ) were not met:
 
 $GTK_PKG_ERRORS
