@@ -2012,8 +2012,8 @@ msgstr ""
 msgid "Yi"
 msgstr "Jia"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "Ne eblis pravalorizi GConf-on."
+msgid "GConf could not be initialized."
+msgstr "Ne eblis pravalorizi GConf-on."
 
 #~ msgid "Searching…"
 #~ msgstr "Serĉo…"
