@@ -39,7 +39,7 @@ AC_PREREQ([2.56])
 AC_INIT([GNOME Character Map],[gucharmap_version],[http://bugzilla.gnome.org/enter_bug.cgi?product=gucharmap],[gucharmap])
 
 AC_CONFIG_MACRO_DIR([m4])
-AC_CONFIG_SRCDIR([gucharmap/gucharmap.h.in])
+AC_CONFIG_SRCDIR([gucharmap/gucharmap-version.h.in])
 AC_CONFIG_HEADERS([config.h])
 
 AM_INIT_AUTOMAKE([1.11 foreign dist-bzip2 no-dist-gzip])
@@ -247,7 +247,7 @@ gucharmap.nsi
 docs/Makefile
 docs/reference/Makefile
 gucharmap/Makefile
-gucharmap/gucharmap.h
+gucharmap/gucharmap-version.h
 help/Makefile
 help/it/Makefile
 help/ja/Makefile

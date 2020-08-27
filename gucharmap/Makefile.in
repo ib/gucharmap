@@ -43,7 +43,7 @@ host_triplet = @host@
 @HAVE_INTROSPECTION_TRUE@am__append_2 = $(nodist_gir_DATA) $(nodist_typelib_DATA)
 subdir = gucharmap
 DIST_COMMON = $(libgucharmapinclude_HEADERS) $(srcdir)/Makefile.am \
-	$(srcdir)/Makefile.in $(srcdir)/gucharmap.h.in
+	$(srcdir)/Makefile.in $(srcdir)/gucharmap-version.h.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/gnome-doc-utils.m4 \
 	$(top_srcdir)/m4/gtk-doc.m4 $(top_srcdir)/m4/intltool.m4 \
@@ -54,7 +54,7 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(install_sh) -d
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = gucharmap.h
+CONFIG_CLEAN_FILES = gucharmap-version.h
 CONFIG_CLEAN_VPATH_FILES =
 am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
 am__vpath_adj = case $$p in \
@@ -438,6 +438,7 @@ libgucharmapinclude_HEADERS = \
 	gucharmap-script-chapters-model.h \
 	gucharmap-script-codepoint-list.h \
 	gucharmap-unicode-info.h \
+	gucharmap-version.h \
 	$(NULL)
 
 nodist_libgucharmapinclude_HEADERS = \
@@ -548,7 +549,7 @@ $(top_srcdir)/configure: @MAINTAINER_MODE_TRUE@ $(am__configure_deps)
 $(ACLOCAL_M4): @MAINTAINER_MODE_TRUE@ $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 $(am__aclocal_m4_deps):
-gucharmap.h: $(top_builddir)/config.status $(srcdir)/gucharmap.h.in
+gucharmap-version.h: $(top_builddir)/config.status $(srcdir)/gucharmap-version.h.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 install-libLTLIBRARIES: $(lib_LTLIBRARIES)
 	@$(NORMAL_INSTALL)

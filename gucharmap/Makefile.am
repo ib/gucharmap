@@ -107,6 +107,7 @@ libgucharmapinclude_HEADERS = \
 	gucharmap-script-chapters-model.h \
 	gucharmap-script-codepoint-list.h \
 	gucharmap-unicode-info.h \
+	gucharmap-version.h \
 	$(NULL)
 
 nodist_libgucharmapinclude_HEADERS = \

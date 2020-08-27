@@ -707,7 +707,7 @@ PACKAGE_STRING='GNOME Character Map 3.0.1-12.0'
 PACKAGE_BUGREPORT='http://bugzilla.gnome.org/enter_bug.cgi?product=gucharmap'
 PACKAGE_URL=''
 
-ac_unique_file="gucharmap/gucharmap.h.in"
+ac_unique_file="gucharmap/gucharmap-version.h.in"
 # Factoring default headers for most tests.
 ac_includes_default="\
 #include <stdio.h>
@@ -13334,7 +13334,7 @@ LIBGUCHARMAP_LT_CURRENT_MINUS_AGE=7
 
 
 
-ac_config_files="$ac_config_files Makefile gucharmap.desktop.in gucharmap.nsi docs/Makefile docs/reference/Makefile gucharmap/Makefile gucharmap/gucharmap.h help/Makefile help/it/Makefile help/ja/Makefile help/zh_HK/Makefile help/zh_TW/Makefile pixmaps/Makefile po/Makefile.in"
+ac_config_files="$ac_config_files Makefile gucharmap.desktop.in gucharmap.nsi docs/Makefile docs/reference/Makefile gucharmap/Makefile gucharmap/gucharmap-version.h help/Makefile help/it/Makefile help/ja/Makefile help/zh_HK/Makefile help/zh_TW/Makefile pixmaps/Makefile po/Makefile.in"
 
 
 ac_config_files="$ac_config_files gucharmap-${GUCHARMAP_API_PC_VERSION}.pc:gucharmap.pc.in"
@@ -14376,7 +14376,7 @@ do
     "docs/Makefile") CONFIG_FILES="$CONFIG_FILES docs/Makefile" ;;
     "docs/reference/Makefile") CONFIG_FILES="$CONFIG_FILES docs/reference/Makefile" ;;
     "gucharmap/Makefile") CONFIG_FILES="$CONFIG_FILES gucharmap/Makefile" ;;
-    "gucharmap/gucharmap.h") CONFIG_FILES="$CONFIG_FILES gucharmap/gucharmap.h" ;;
+    "gucharmap/gucharmap-version.h") CONFIG_FILES="$CONFIG_FILES gucharmap/gucharmap-version.h" ;;
     "help/Makefile") CONFIG_FILES="$CONFIG_FILES help/Makefile" ;;
     "help/it/Makefile") CONFIG_FILES="$CONFIG_FILES help/it/Makefile" ;;
     "help/ja/Makefile") CONFIG_FILES="$CONFIG_FILES help/ja/Makefile" ;;
