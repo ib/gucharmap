@@ -13334,7 +13334,7 @@ LIBGUCHARMAP_LT_CURRENT_MINUS_AGE=7
 
 
 
-ac_config_files="$ac_config_files Makefile gucharmap.desktop.in gucharmap.nsi gucharmap.spec docs/Makefile docs/reference/Makefile gucharmap/Makefile gucharmap/gucharmap.h help/Makefile help/it/Makefile help/ja/Makefile help/zh_HK/Makefile help/zh_TW/Makefile pixmaps/Makefile po/Makefile.in"
+ac_config_files="$ac_config_files Makefile gucharmap.desktop.in gucharmap.nsi docs/Makefile docs/reference/Makefile gucharmap/Makefile gucharmap/gucharmap.h help/Makefile help/it/Makefile help/ja/Makefile help/zh_HK/Makefile help/zh_TW/Makefile pixmaps/Makefile po/Makefile.in"
 
 
 ac_config_files="$ac_config_files gucharmap-${GUCHARMAP_API_PC_VERSION}.pc:gucharmap.pc.in"
@@ -14373,7 +14373,6 @@ do
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
     "gucharmap.desktop.in") CONFIG_FILES="$CONFIG_FILES gucharmap.desktop.in" ;;
     "gucharmap.nsi") CONFIG_FILES="$CONFIG_FILES gucharmap.nsi" ;;
-    "gucharmap.spec") CONFIG_FILES="$CONFIG_FILES gucharmap.spec" ;;
     "docs/Makefile") CONFIG_FILES="$CONFIG_FILES docs/Makefile" ;;
     "docs/reference/Makefile") CONFIG_FILES="$CONFIG_FILES docs/reference/Makefile" ;;
     "gucharmap/Makefile") CONFIG_FILES="$CONFIG_FILES gucharmap/Makefile" ;;

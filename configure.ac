@@ -244,7 +244,6 @@ AC_CONFIG_FILES([
 Makefile
 gucharmap.desktop.in
 gucharmap.nsi
-gucharmap.spec
 docs/Makefile
 docs/reference/Makefile
 gucharmap/Makefile

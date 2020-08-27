@@ -27,8 +27,6 @@ pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = gucharmap-$(GUCHARMAP_API_PC_VERSION).pc
 
 EXTRA_DIST = \
-	ChangeLog.pre-2-23 \
-	ChangeLog.README \
 	autogen.sh \
 	gtkrc.win32 \
 	gnome-doc-utils.make \
@@ -80,15 +78,6 @@ if GCONF_SCHEMAS_INSTALL
 	fi
 endif # GCONF_SCHEMAS_INSTALL
 endif # ENABLE_CHARMAP
-
-ChangeLog:
-	$(AM_V_GEN) if test -f $(top_srcdir)/.git/HEAD; then \
-		git log --stat > $@; \
-	fi
-
-dist: ChangeLog
-
-.PHONY: ChangeLog
 
 @INTLTOOL_DESKTOP_RULE@
 @INTLTOOL_SCHEMAS_RULE@

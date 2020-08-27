@@ -39,10 +39,9 @@ subdir = .
 DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in $(srcdir)/config.h.in \
 	$(srcdir)/gucharmap.desktop.in.in $(srcdir)/gucharmap.nsi.in \
-	$(srcdir)/gucharmap.pc.in $(srcdir)/gucharmap.spec.in \
-	$(top_srcdir)/configure AUTHORS COPYING ChangeLog NEWS TODO \
+	$(srcdir)/gucharmap.pc.in $(top_srcdir)/configure COPYING TODO \
 	compile config.guess config.sub depcomp install-sh ltmain.sh \
-	missing mkinstalldirs
+	missing
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/gnome-doc-utils.m4 \
 	$(top_srcdir)/m4/gtk-doc.m4 $(top_srcdir)/m4/intltool.m4 \
@@ -53,9 +52,9 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
  configure.lineno config.status.lineno
-mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+mkinstalldirs = $(install_sh) -d
 CONFIG_HEADER = config.h
-CONFIG_CLEAN_FILES = gucharmap.desktop.in gucharmap.nsi gucharmap.spec \
+CONFIG_CLEAN_FILES = gucharmap.desktop.in gucharmap.nsi \
 	gucharmap-${GUCHARMAP_API_PC_VERSION}.pc
 CONFIG_CLEAN_VPATH_FILES =
 AM_V_GEN = $(am__v_GEN_$(V))
@@ -341,8 +340,6 @@ schema_DATA = $(schema_in_files:.schemas.in=.schemas)
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = gucharmap-$(GUCHARMAP_API_PC_VERSION).pc
 EXTRA_DIST = \
-	ChangeLog.pre-2-23 \
-	ChangeLog.README \
 	autogen.sh \
 	gtkrc.win32 \
 	gnome-doc-utils.make \
@@ -434,8 +431,6 @@ distclean-hdr:
 gucharmap.desktop.in: $(top_builddir)/config.status $(srcdir)/gucharmap.desktop.in.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 gucharmap.nsi: $(top_builddir)/config.status $(srcdir)/gucharmap.nsi.in
-	cd $(top_builddir) && $(SHELL) ./config.status $@
-gucharmap.spec: $(top_builddir)/config.status $(srcdir)/gucharmap.spec.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 gucharmap-${GUCHARMAP_API_PC_VERSION}.pc: $(top_builddir)/config.status $(srcdir)/gucharmap.pc.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
@@ -955,15 +950,6 @@ uninstall-am: uninstall-desktopDATA uninstall-pkgconfigDATA \
 @ENABLE_CHARMAP_TRUE@@GCONF_SCHEMAS_INSTALL_TRUE@			GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $$p 2>&1 > /dev/null; \
 @ENABLE_CHARMAP_TRUE@@GCONF_SCHEMAS_INSTALL_TRUE@		done \
 @ENABLE_CHARMAP_TRUE@@GCONF_SCHEMAS_INSTALL_TRUE@	fi
-
-ChangeLog:
-	$(AM_V_GEN) if test -f $(top_srcdir)/.git/HEAD; then \
-		git log --stat > $@; \
-	fi
-
-dist: ChangeLog
-
-.PHONY: ChangeLog
 
 @INTLTOOL_DESKTOP_RULE@
 @INTLTOOL_SCHEMAS_RULE@
