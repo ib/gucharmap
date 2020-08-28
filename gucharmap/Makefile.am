@@ -47,6 +47,7 @@ libgucharmap@GUCHARMAP_LIBRARY_SUFFIX_U@_la_SOURCES = \
 	gucharmap-codepoint-list.c \
 	gucharmap-codepoint-list.h \
 	gucharmap-init.c \
+	gucharmap-macros.h \
 	gucharmap-private.h \
 	gucharmap-script-chapters-model.c \
 	gucharmap-script-chapters-model.h \
@@ -104,6 +105,7 @@ libgucharmapinclude_HEADERS = \
 	gucharmap-chartable.h \
 	gucharmap-codepoint-list.h \
 	gucharmap.h \
+	gucharmap-macros.h \
 	gucharmap-script-chapters-model.h \
 	gucharmap-script-codepoint-list.h \
 	gucharmap-unicode-info.h \
