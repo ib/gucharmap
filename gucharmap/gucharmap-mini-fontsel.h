@@ -44,7 +44,11 @@ struct _GucharmapMiniFontSelection
   GtkWidget            *bold;   /* toggle button*/
   GtkWidget            *italic; /* toggle button*/
 
+#if GTK_CHECK_VERSION (2, 91, 0)
   GtkAdjustment        *size_adj;
+#else
+  GtkObject            *size_adj;
+#endif
   GtkWidget            *size;   /* spin button */
 
   PangoFontDescription *font_desc;
