@@ -232,12 +232,6 @@ gucharmap_settings_shutdown (void)
   return;
 }
 
-static gboolean
-gucharmap_settings_initialized (void)
-{
-  return FALSE;
-}
-
 GucharmapChaptersMode
 gucharmap_settings_get_chapters_mode (void)
 {
