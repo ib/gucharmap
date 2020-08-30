@@ -2219,7 +2219,9 @@ gucharmap_chartable_set_property (GObject *object,
                                   GParamSpec *pspec)
 {
   GucharmapChartable *chartable = GUCHARMAP_CHARTABLE (object);
+#if GTK_CHECK_VERSION (2, 91, 2)
   GucharmapChartablePrivate *priv = chartable->priv;
+#endif
 
   switch (prop_id) {
 #if GTK_CHECK_VERSION (2, 91, 2)
