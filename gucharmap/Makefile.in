@@ -1235,7 +1235,7 @@ gucharmap-marshal.h: $(srcdir)/gucharmap-marshal.list
 
 gucharmap-marshal.c: $(srcdir)/gucharmap-marshal.list
 	$(AM_V_GEN) ( $(GLIB_GENMARSHAL) --prefix=_gucharmap_marshal $(srcdir)/gucharmap-marshal.list \
-			    --header \
+			    --prototypes \
                             --body \
                             --internal > gucharmap-marshal.c.tmp \
           && mv gucharmap-marshal.c.tmp gucharmap-marshal.c ) \
