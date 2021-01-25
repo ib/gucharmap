@@ -472,8 +472,11 @@ insert_hanja_prop_detail (GucharmapCharmap *charmap,
   GList* nList = NULL;
   GList* xList = NULL;
 
+  GList *node;
+  char **ptr, *c;
+
   char **splitHanja = g_strsplit_set(value, " ", -1);
-  for (char **ptr = splitHanja; *ptr != NULL; ++ptr) {
+  for (ptr = splitHanja; *ptr != NULL; ++ptr) {
     char **splitItem = g_strsplit_set(*ptr, ":", -1);
     if (splitItem == NULL)
       goto next;
@@ -484,7 +487,7 @@ insert_hanja_prop_detail (GucharmapCharmap *charmap,
     if (hanjaKeys == NULL)
       goto next;
 
-    for (char *c = hanjaKeys; *c != '\0'; ++c) {
+    for (c = hanjaKeys; *c != '\0'; ++c) {
       if (*c == '0') {
         ksx1001List = g_list_prepend(ksx1001List, g_strdup(hanjaVal));
       } else if (*c == '1') {
@@ -510,7 +513,7 @@ insert_hanja_prop_detail (GucharmapCharmap *charmap,
     /* Translators: this is the name of a korean standard */
     gtk_text_buffer_insert (buffer, iter, _("KS X 1001"), -1);
     gtk_text_buffer_insert (buffer, iter, ": ", -1);
-    for (GList *node = ksx1001List; node; node = node->next) {
+    for (node = ksx1001List; node; node = node->next) {
       gtk_text_buffer_insert_with_tags_by_name (buffer, iter,  node->data, -1,
                                                 "detail-value", NULL);
       if (node->next != NULL)
@@ -526,7 +529,7 @@ insert_hanja_prop_detail (GucharmapCharmap *charmap,
     /* Translators: this is the name of a korean standard */
     gtk_text_buffer_insert (buffer, iter, _("KS X 1002"), -1);
     gtk_text_buffer_insert (buffer, iter, ": ", -1);
-    for (GList *node = ksx1002List; node; node = node->next) {
+    for (node = ksx1002List; node; node = node->next) {
       gtk_text_buffer_insert_with_tags_by_name (buffer, iter, node->data, -1,
                                                 "detail-value", NULL);
       if (node->next != NULL)
@@ -541,7 +544,7 @@ insert_hanja_prop_detail (GucharmapCharmap *charmap,
     gtk_text_buffer_insert (buffer, iter, "  ", -1);
     gtk_text_buffer_insert (buffer, iter, _("Korean Education Hanja"), -1);
     gtk_text_buffer_insert (buffer, iter, ": ", -1);
-    for (GList *node = eList; node; node = node->next) {
+    for (node = eList; node; node = node->next) {
       gtk_text_buffer_insert_with_tags_by_name (buffer, iter, node->data, -1,
                                                 "detail-value", NULL);
       if (node->next != NULL)
@@ -557,7 +560,7 @@ insert_hanja_prop_detail (GucharmapCharmap *charmap,
     gtk_text_buffer_insert (buffer, iter,
                             _("Korean Hanja for Use in Personal Names"), -1);
     gtk_text_buffer_insert (buffer, iter, ": ", -1);
-    for (GList *node = nList; node; node = node->next) {
+    for (node = nList; node; node = node->next) {
       gtk_text_buffer_insert_with_tags_by_name (buffer, iter, node->data, -1,
                                                 "detail-value", NULL);
       if (node->next != NULL)
@@ -572,7 +575,7 @@ insert_hanja_prop_detail (GucharmapCharmap *charmap,
     gtk_text_buffer_insert (buffer, iter, "  ", -1);
     gtk_text_buffer_insert (buffer, iter, _("later removed at the code point"), -1);
     gtk_text_buffer_insert (buffer, iter, ": ", -1);
-    for (GList *node = xList; node; node = node->next) {
+    for (node = xList; node; node = node->next) {
       gtk_text_buffer_insert_with_tags_by_name (buffer, iter, node->data, -1,
                                                 "detail-value", NULL);
       if (node->next != NULL)
