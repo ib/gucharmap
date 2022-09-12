@@ -2113,8 +2113,8 @@ msgstr "Scriere prin semne"
 msgid "Yi"
 msgstr "Yi"
 
-#~ msgid "GConf could not be initialized."
-#~ msgstr "GConf nu a putut fi inițializat."
+msgid "GConf could not be initialized."
+msgstr "GConf nu a putut fi inițializat."
 
 #~ msgid "Searching…"
 #~ msgstr "Se caută..."
