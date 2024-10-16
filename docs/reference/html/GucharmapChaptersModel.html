@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GucharmapChaptersModel: gucharmap Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="gucharmap Reference Manual">
+<link rel="up" href="pt01.html" title="Part I. API Reference">
+<link rel="prev" href="GucharmapBlockCodepointList.html" title="GucharmapBlockCodepointList">
+<link rel="next" href="GucharmapChartable.html" title="GucharmapChartable">
+<meta name="generator" content="GTK-Doc V1.24 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GucharmapChaptersModel.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GucharmapChaptersModel.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="pt01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GucharmapBlockCodepointList.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GucharmapChartable.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GucharmapChaptersModel"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GucharmapChaptersModel.top_of_page"></a>GucharmapChaptersModel</span></h2>
+<p>GucharmapChaptersModel</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GucharmapChaptersModel.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GucharmapCodepointList.html" title="GucharmapCodepointList"><span class="returnvalue">GucharmapCodepointList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GucharmapChaptersModel.html#gucharmap-chapters-model-get-codepoint-list" title="gucharmap_chapters_model_get_codepoint_list ()">gucharmap_chapters_model_get_codepoint_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GucharmapChaptersModel.html#gucharmap-chapters-model-get-title" title="gucharmap_chapters_model_get_title ()">gucharmap_chapters_model_get_title</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GucharmapCodepointList.html" title="GucharmapCodepointList"><span class="returnvalue">GucharmapCodepointList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GucharmapChaptersModel.html#gucharmap-chapters-model-get-book-codepoint-list" title="gucharmap_chapters_model_get_book_codepoint_list ()">gucharmap_chapters_model_get_book_codepoint_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="GucharmapChaptersModel.html#gucharmap-chapters-model-character-to-iter" title="gucharmap_chapters_model_character_to_iter ()">gucharmap_chapters_model_character_to_iter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="GucharmapChaptersModel.html#gucharmap-chapters-model-id-to-iter" title="gucharmap_chapters_model_id_to_iter ()">gucharmap_chapters_model_id_to_iter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GucharmapChaptersModel.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GtkListStore
+        <span class="lineart">╰──</span> GucharmapChaptersModel
+            <span class="lineart">├──</span> <a class="link" href="GucharmapBlockChaptersModel.html" title="GucharmapBlockChaptersModel">GucharmapBlockChaptersModel</a>
+            <span class="lineart">╰──</span> <a class="link" href="GucharmapScriptChaptersModel.html" title="GucharmapScriptChaptersModel">GucharmapScriptChaptersModel</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="GucharmapChaptersModel.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="GucharmapChaptersModel.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gucharmap-chapters-model-get-codepoint-list"></a><h3>gucharmap_chapters_model_get_codepoint_list ()</h3>
+<pre class="programlisting"><a class="link" href="GucharmapCodepointList.html" title="GucharmapCodepointList"><span class="returnvalue">GucharmapCodepointList</span></a> *
+gucharmap_chapters_model_get_codepoint_list
+                               (<em class="parameter"><code><a class="link" href="GucharmapChaptersModel.html" title="GucharmapChaptersModel"><span class="type">GucharmapChaptersModel</span></a> *chapters</code></em>,
+                                <em class="parameter"><code><span class="type">GtkTreeIter</span> *iter</code></em>);</pre>
+<p>Creates a new <a class="link" href="GucharmapCodepointList.html" title="GucharmapCodepointList"><span class="type">GucharmapCodepointList</span></a> representing the characters in the
+current chapter.</p>
+<div class="refsect3">
+<a name="id-1.2.5.6.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chapters</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GucharmapChaptersModel.html" title="GucharmapChaptersModel"><span class="type">GucharmapChaptersModel</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iter</p></td>
+<td class="parameter_description"><p>a <span class="type">GtkTreeIter</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.5.6.2.6"></a><h4>Returns</h4>
+<p> the newly-created <a class="link" href="GucharmapCodepointList.html" title="GucharmapCodepointList"><span class="type">GucharmapCodepointList</span></a>,
+or NULL if there is no chapter selected. The caller should release the
+result with <code class="function">g_object_unref()</code> when finished. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gucharmap-chapters-model-get-title"></a><h3>gucharmap_chapters_model_get_title ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+gucharmap_chapters_model_get_title (<em class="parameter"><code><a class="link" href="GucharmapChaptersModel.html" title="GucharmapChaptersModel"><span class="type">GucharmapChaptersModel</span></a> *chapters</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gucharmap-chapters-model-get-book-codepoint-list"></a><h3>gucharmap_chapters_model_get_book_codepoint_list ()</h3>
+<pre class="programlisting"><a class="link" href="GucharmapCodepointList.html" title="GucharmapCodepointList"><span class="returnvalue">GucharmapCodepointList</span></a> *
+gucharmap_chapters_model_get_book_codepoint_list
+                               (<em class="parameter"><code><a class="link" href="GucharmapChaptersModel.html" title="GucharmapChaptersModel"><span class="type">GucharmapChaptersModel</span></a> *chapters</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.5.6.4.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>chapters</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GucharmapChaptersModel.html" title="GucharmapChaptersModel"><span class="type">GucharmapChaptersModel</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.5.6.4.5"></a><h4>Returns</h4>
+<p> a reference to a <a class="link" href="GucharmapCodepointList.html" title="GucharmapCodepointList"><span class="type">GucharmapCodepointList</span></a>
+representing all the characters in all the chapters. It should not be
+modified, but must be <code class="function">g_object_unref()</code>'d after use. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gucharmap-chapters-model-character-to-iter"></a><h3>gucharmap_chapters_model_character_to_iter ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gucharmap_chapters_model_character_to_iter
+                               (<em class="parameter"><code><a class="link" href="GucharmapChaptersModel.html" title="GucharmapChaptersModel"><span class="type">GucharmapChaptersModel</span></a> *chapters</code></em>,
+                                <em class="parameter"><code><span class="type">gunichar</span> wc</code></em>,
+                                <em class="parameter"><code><span class="type">GtkTreeIter</span> *iter</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.5.6.5.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chapters</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GucharmapChaptersModel.html" title="GucharmapChaptersModel"><span class="type">GucharmapChaptersModel</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>wc</p></td>
+<td class="parameter_description"><p>a character</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iter</p></td>
+<td class="parameter_description"><p> a <span class="type">GtkTreeIter</span>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.5.6.5.5"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> on success, <code class="literal">FALSE</code> on failure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gucharmap-chapters-model-id-to-iter"></a><h3>gucharmap_chapters_model_id_to_iter ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gucharmap_chapters_model_id_to_iter (<em class="parameter"><code><a class="link" href="GucharmapChaptersModel.html" title="GucharmapChaptersModel"><span class="type">GucharmapChaptersModel</span></a> *chapters_model</code></em>,
+                                     <em class="parameter"><code>const <span class="type">char</span> *id</code></em>,
+                                     <em class="parameter"><code><span class="type">GtkTreeIter</span> *_iter</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.5.6.6.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chapters_model</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GucharmapChaptersModel.html" title="GucharmapChaptersModel"><span class="type">GucharmapChaptersModel</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_iter</p></td>
+<td class="parameter_description"><p> a <span class="type">GtkTreeIter</span>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.5.6.6.5"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> on success, <code class="literal">FALSE</code> on failure.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GucharmapChaptersModel.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.24</div>
+</body>
+</html>
