@@ -1604,7 +1604,7 @@ gucharmap_charmap_new (void)
  * @charmap:
  * @orientation:
  *
- * Deprecated: 2.25.0
+ * Deprecated: 2.26
  */
 void
 gucharmap_charmap_set_orientation (GucharmapCharmap *charmap,
