@@ -10,7 +10,7 @@ DOC_MODULE_VERSION = $(GUCHARMAP_API_VERSION)
 DOC_MAIN_SGML_FILE = gucharmap-docs.sgml
 
 # Extra options to supply to gtkdoc-scan
-SCAN_OPTIONS =
+SCAN_OPTIONS = --rebuild-sections --rebuild-types
 
 # Extra options to pass to gtkdoc-scangobj
 SCANGOBJ_OPTIONS = --type-init-func="g_type_init()" 
@@ -24,6 +24,7 @@ CFILE_GLOB = $(top_srcdir)/gucharmap/*.c
 
 # Header files to ignore when scanning
 IGNORE_HFILES = \
+	config.h \
 	gucharmap-chartable-accessible.h \
 	gucharmap-chartable-cell-accessible.h \
 	gucharmap-font-codepoint-list.h \
@@ -32,7 +33,10 @@ IGNORE_HFILES = \
 	gucharmap-private.h \
 	gucharmap-search-dialog.h \
 	gucharmap-settings.h \
+	gucharmap-type-builtins.h \
+	gucharmap-version.h \
 	gucharmap-window.h \
+	gucharmap.h \
 	unicode-blocks.h \
 	unicode-categories.h \
 	unicode-names.h \
